@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () =>{
   .then((response)=>{
      if(response === "All Images are loaded"){
        const carrousselElements = document.querySelectorAll(".carroussel-elements");
+       console.log(carrousselElements);
              carrousselElements.classList.remove("hide");
        carroussel(carrousselElements);
      }
