@@ -34,6 +34,7 @@ body, html{
   display:flex;
   flex-direction:row;
   transition:transform ease 0.5s;
+  background:#757575;
 }
 #flex-box-contain .flex-child{
   flex-shrink:0;
