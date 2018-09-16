@@ -1,5 +1,6 @@
 #carroussel{
   height:100%;
+  background:#212121;
 }
 #carroussel div{
   position:absolute;
