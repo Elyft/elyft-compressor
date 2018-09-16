@@ -2,6 +2,7 @@ import {animateSlide} from '../helpers/animateSlide.js';
 import {drawAnOverview} from '../helpers/drawAnOverview.js';
 import {elyftCompression} from '../helpers/elyftCompression.js';
 import {snackbar} from '../widgets/snackbar.js';
+import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
 import {getThePictureExtension} from '../helpers/getThePictureExtension.js';
 export function secondViewSlide(){
 	let imageToCompress;
@@ -19,19 +20,13 @@ export function secondViewSlide(){
 				}else{
 					snackbar(document.getElementById('body'),'icons/info.svg',"Please choose a picture first",5000);
 				}
-			}else if(targetId === "png"){
-				let message;
-				if(imageToCompress === undefined){
-					message = "Please choose a picture first";
-				}else if(getThePictureExtension(imageToCompress) === "png"){
-					message = "The image that you have selected is already a png image";
-				}else{
-					message = "Your image will be automatically convert to png image";
+			}else if(["png", "jpg-or-jpeg"].includes(targetId) === true){
+        if(imageToCompress !== undefined){
+					controllerForPngOrJpgImage(imageToCompress,getThePictureExtension(imageToCompress));
 				}
-        snackbar(document.getElementById('body'),'icons/info.svg',message,5000);
-			}else if(targetId === "jpg-or-jpeg"){
-        alert("jpeg");
 			}
+		}else{
+			return false;
 		}
 	},{passive:true};
 
