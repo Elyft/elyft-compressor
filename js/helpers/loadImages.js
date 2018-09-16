@@ -26,7 +26,6 @@ function checkIfImageLoadedOrNot(imagePath){
 }
 
 function handleAllCheckIfImageLoadedOrNot(...imagesPaths){
-  console.log(typeof(imagesPaths));
   return Promise.all(imagesPaths.map(checkIfImageLoadedOrNot)).then((values)=>{
     console.log(values);
   })
