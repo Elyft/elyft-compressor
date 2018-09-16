@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu+Condensed');
+@import url('carroussel.css');
+@import url('snackbar.css');
+:root{
+  --theme-color:#1565c0;
+  --secondary-theme-color:#424242;
+}
+body, html{
+  padding:0;
+  margin:0;
+  font-family: 'Roboto Slab', serif;
+  /*text-rendering: optimizeLegibility;*/
+  font-feature-settings:"kern";
+  scroll-behavior:smooth;
+  width:100%;
+  height:100%;
+}
+.hide{
+  display:none;
+}
+#wrapper-flex-box-contain{
+  width:360px;
+  height:470px;
+  background:rgba(255,255,255,0.9);
+  border-radius:3px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate3d(-180px,-235px,0);
+  box-sizing:border-box;
+  overflow:hidden;
+}
+#flex-box-contain{
+  display:flex;
+  flex-direction:row;
+  transition:transform ease 0.5s;
+}
+#flex-box-contain .flex-child{
+  flex-shrink:0;
+  width:360px;
+  height:440px;
+  box-sizing:border-box;
+}
+/* First View */
+.first-flex-child{
+  padding:15px;
+}
+#first-view img{
+  display:block;
+  margin:0 auto;
+}
+#first-view p{
+  color:#212121;
+  font-size:0.85rem;
+}
+.button{
+  display:inline-block;
+  padding:7px;
+  padding-left:12px;
+  padding-right:12px;
+  color:#ffffff;
+  background:var(--secondary-theme-color);
+  border-radius:3px;
+  text-align:center;
+  cursor:pointer;
+}
+.button:hover{
+  transition:background ease 0.3s;
+  background:var(--theme-color);
+}
+.next-button{
+  float:right;
+}
+/* Second View */
+#area-img-selected{
+  height:250px;
+  text-align:center;
+  background:#e0e0e0;
+  background-position:center;
+  background-size:cover;
+}
+#area-img-selected p{
+  font-size:0.8rem;
+  color:#9e9e9e;
+  margin-top:120px;
+  display: inline-block;
+}
+
+/* Style Input type files */
+.inputfile{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  outline:none;
+  border:none;
+}
+.inputfile + label:active{
+  border:none!important;
+  outline:none !important;
+ }
+.inputfile + label::before{
+   vertical-align:middle !important;
+   display:inline-block;
+   /*margin-right:5px;*/
+ }
+.inputfile + label::before{
+   /*content:url(../icons/upload.svg);*/
+ }
+ #wrapper-conversion-option{
+   font-size:0.7rem;
+   width:260px;
+   box-sizing:border-box;
+   text-align:center;
+   margin:0 auto;
+   margin-top:30px;
+ }
+ .convertion-choice{
+   cursor:pointer;
+ }
+ .convertion-choice:hover{
+   color:var(--theme-color);
+   text-decoration:underline;
+ }
+.large-button{
+  width:260px;
+  box-sizing:border-box;
+  display:block;
+  margin:0 auto;
+  margin-top:30px;
+}

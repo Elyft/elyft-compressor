@@ -1,0 +1,26 @@
+#carroussel{
+  height:100%;
+}
+#carroussel div{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-position:center;
+  background-size:cover;
+  transition:opacity 3s;
+}
+.bg1{
+  background:url(../img/bg1.jpg);
+}
+.bg2{
+  background:url(../img/bg2.jpg);
+}
+.bg3{
+  background:url(../img/bg3.jpg);
+}
+#filter-carroussel{
+ z-index:99;
+ background:rgba(0,0,0,0.5);
+}

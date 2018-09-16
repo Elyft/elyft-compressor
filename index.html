@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Elyft-Compressor</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="theme-color" id="statusBar" content="#009688" >
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="Tool for compression and change extension name for images">
+    <meta name="author" content="Nguetseng STephane">
+    <meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1, maximum-scale=3 user-scalable=no">
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/againstie.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/index.css" media="all">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+</head>
+<body id="body">
+  <section id='carroussel'>
+    <!-- <div class='carroussel-elements bg1 hide'></div>
+    <div class='carroussel-elements bg2 hide'></div>
+    <div class='carroussel-elements bg3 hide'></div>
+    <div id='filter'></div> -->
+  </section>
+  <section id='wrapper-flex-box-contain'>
+   <section id='flex-box-contain'>
+   	<div id='first-view' class='flex-child first-flex-child'>
+      <img src='img/logo.png' width  = 110 height = 136 /><br />
+      <p>Elyft Compressor is a tool for compressing, resizing images and changing images extensions (for example transforming a jpg into a png after compression).
+        What differentiates it from other online compression tools is that it is written entirely in Javascript, which means that you will be able in the near future (during the next update) to perform your image compression even while offline.Elyft Compressor uses one or more cores of your processors to compress your images very quickly.
+      </p><br />
+   	<span class='button next-button' id='go-to-second-slide'>Start</span>
+   	</div>
+   	<div id='second-view' class='flex-child'>
+      <div id='area-img-selected'>
+        <p>No overview yet</p>
+      </div>
+      <label for='select-file' class="button large-button">Choose an image</label>
+      <input type='file' class='inputfile' id='select-file' />
+      <span class="button large-button" id='start-compression'>Start compression</span>
+      <div id='wrapper-conversion-option'>
+        <span>you can also choose the image format before the compression. Just click on <span id='png' class='convertion-choice' data-extension='png'>Png</span> or <span id='jpg-or-jpeg' class='convertion-choice' data-extension='jpg'>Jpg</span></span>
+      </div>
+   	</div>
+   </section>
+  </section>
+</body>
+ <script type='module' src='js/index.js'></script>
+</html>

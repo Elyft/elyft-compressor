@@ -1,0 +1,36 @@
+/*Snackbar style*/
+#snackbar{
+   position:absolute;
+   left:15px;
+   bottom:15px;
+   background:rgba(0,0,0,0.8);
+   color:#fff;
+   padding:15px;
+   border-radius:0px 3px 3px 0px;
+   border-left:4px solid var(--theme-color);
+   transform:scale3d(0,0,0);
+   font-size:0.9rem;
+   z-index:9999999999;
+   transition:transform ease 0.3s !important;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow:hidden;
+   /*font-weight:bold;*/
+   contain:layout;
+ }
+#snackbarImg{
+   margin-right:3px;
+   vertical-align:top !important;
+   display:inline-block;
+   width:16px;
+   height:16px;
+ }
+#actionSnackbar{
+   text-align: right;
+   color:var(--theme-color);
+   margin-left: 50px;
+   font-size: .9rem;
+   cursor: pointer;
+   display: inline-block !important;
+   text-transform:uppercase;
+}
