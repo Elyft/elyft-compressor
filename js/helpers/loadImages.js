@@ -1,7 +1,7 @@
-export function loadImages(...imagesPaths){
+export function loadImages(imagesPath){
   return new Promise((resolve)=>{
     // handleAllCheckIfImageLoadedOrNot(...imagesPaths);
-    checkIfImageLoadedOrNot("https://elyft.github.io/elyft-compressor/img/bg1.jpg");
+    checkIfImageLoadedOrNot(imagePath);
   })
  //  return Promise.all(arrayOfImagesPath.map(checkIfImageLoadedOrNot)).then(function(values) {
  //  console.log(values);

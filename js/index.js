@@ -5,7 +5,7 @@ import {secondViewSlide} from './modules/secondviewSlide.js';
 // import {thirdViewSlide} from './modules/thirdviewslide.js';
 document.addEventListener("DOMContentLoaded", () =>{
   "use strict";
-  loadImages(['https://elyft.github.io/elyft-compressor/img/bg1.jpg','https://elyft.github.io/elyft-compressor/img/bg2.jpg','https://elyft.github.io/elyft-compressor/img/bg3.jpg']);
+  loadImages("https://elyft.github.io/elyft-compressor/img/bg1.jpg");
   // carroussel(document.querySelectorAll(".carroussel-elements"));
   firstViewSlide();
   secondViewSlide();
