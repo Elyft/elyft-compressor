@@ -5,7 +5,7 @@ import {secondViewSlide} from './modules/secondviewSlide.js';
 // import {thirdViewSlide} from './modules/thirdviewslide.js';
 document.addEventListener("DOMContentLoaded", () =>{
   "use strict";
-  loadImages(['../img/bg1.jpg','../img/bg2.jpg','../img/bg3.jpg']);
+  loadImages(['img/bg1.jpg','img/bg2.jpg','img/bg3.jpg']);
   // carroussel(document.querySelectorAll(".carroussel-elements"));
   firstViewSlide();
   secondViewSlide();
