@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () =>{
   loadImages(...['img/bg1.jpg','img/bg2.jpg','img/bg3.jpg'])
   .then((response)=>{
      if(response === "All Images are loaded"){
-       carroussel(document.querySelectorAll(".carroussel-elements"));
+       const carrousselElements = document.querySelectorAll(".carroussel-elements");
+             carrousselElements.classList.remove("hide");
+       carroussel(carrousselElements);
      }
   }).catch((error)=>{
     console.log(error);

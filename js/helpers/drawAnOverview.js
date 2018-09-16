@@ -7,14 +7,14 @@ export function drawAnOverview(pictureForTheOverview){
         console.log(pictureExtension);
     if(allowedExtensions.includes(pictureExtension) === true){
       const thumbnail = new Image();
-          const thumbnailUrl = URL.createObjectURL(pictureForTheOverview[0]);
-          thumbnail.src = thumbnailUrl;
-          thumbnail.onload = ()=>{
-            if(thumbnail.complete === true){
-              URL.revokeObjectURL(thumbnailUrl);
-              resolve(thumbnail);
-            }
-          },{passive:true};
+      const thumbnailUrl = URL.createObjectURL(pictureForTheOverview[0]);
+            thumbnail.src = thumbnailUrl;
+            thumbnail.onload = ()=>{
+              if(thumbnail.complete === true){
+                URL.revokeObjectURL(thumbnailUrl);
+                resolve(thumbnail);
+              }
+            },{passive:true};
     }else{
       // Right There we send a message with bad extension type
       resolve('Bad extension use jpg,jpeg or png');
