@@ -41,7 +41,7 @@ export function secondViewSlide(){
 		            const area_img_selected = document.getElementById('area-img-selected');
 					      requestAnimationFrame(()=>{
 							     area_img_selected.innerHTML = null;
-							     area_img_selected.style.backgroundImage = `url(${responseDrawAnOverview.src})`;
+							     area_img_selected.style.backgroundImage = `url(${responseDrawAnOverview[0].src})`;
 									 pictureFeatures = [responseDrawAnOverview[0],responseDrawAnOverview[1]];
 			          });
             }
