@@ -4,15 +4,14 @@ export function drawAnOverview(pictureForTheOverview){
     const allowedExtensions = ['jpg','jpeg','png'];
     let pictureExtension = pictureForTheOverview[0].name.split(".");
         pictureExtension = pictureExtension.pop().trim().toLowerCase();
-        console.log(pictureExtension);
     if(allowedExtensions.includes(pictureExtension) === true){
       const thumbnail = new Image();
       const thumbnailUrl = URL.createObjectURL(pictureForTheOverview[0]);
             thumbnail.src = thumbnailUrl;
             thumbnail.onload = ()=>{
               if(thumbnail.complete === true){
-                URL.revokeObjectURL(thumbnailUrl);
                 resolve(thumbnail);
+                URL.revokeObjectURL(thumbnailUrl);
               }
             },{passive:true};
     }else{

@@ -16,7 +16,7 @@ export function secondViewSlide(){
 									 console.log(error);
 								});
 				}else{
-					snackbar(document.getElementById('body'),'icons/info.svg',"please choose a picture first",5000);
+					snackbar(document.getElementById('body'),'icons/info.svg',"Please choose a picture first",5000);
 				}
 			}else if(targetId === "png"){
         alert("png");
