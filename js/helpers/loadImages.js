@@ -1,12 +1,12 @@
 export function loadImages(...imagesPaths){
   return new Promise((resolve)=>{
     // handleAllCheckIfImageLoadedOrNot(...imagesPaths);
-    function checkIfImageLoadedOrNot(imagePath)
+    function checkIfImageLoadedOrNot(imagePath);
   })
  //  return Promise.all(arrayOfImagesPath.map(checkIfImageLoadedOrNot)).then(function(values) {
  //  console.log(values);
  // });
-}
+};
 function checkIfImageLoadedOrNot("https://elyft.github.io/elyft-compressor/img/bg1.jpg"){
    return new Promise((resolve)=>{
      const img = new Image();
