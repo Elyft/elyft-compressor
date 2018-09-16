@@ -11,7 +11,7 @@ export function drawAnOverview(pictureForTheOverview){
             thumbnail.onload = ()=>{
               if(thumbnail.complete === true){
                 resolve(thumbnail);
-                URL.revokeObjectURL(thumbnailUrl);
+                // URL.revokeObjectURL(thumbnailUrl);
               }
             },{passive:true};
     }else{
