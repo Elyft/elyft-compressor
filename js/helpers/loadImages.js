@@ -1,7 +1,7 @@
 export function loadImages(...imagesPaths){
   return new Promise((resolve)=>{
     // handleAllCheckIfImageLoadedOrNot(...imagesPaths);
-    function checkIfImageLoadedOrNot(imagePath);
+    checkIfImageLoadedOrNot(imagePath);
   })
  //  return Promise.all(arrayOfImagesPath.map(checkIfImageLoadedOrNot)).then(function(values) {
  //  console.log(values);
