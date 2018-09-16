@@ -1,4 +1,4 @@
-export function loadImages(imagesPath){
+export function loadImages(imagePath){
   return new Promise((resolve)=>{
     // handleAllCheckIfImageLoadedOrNot(...imagesPaths);
     checkIfImageLoadedOrNot(imagePath);
