@@ -1,16 +1,16 @@
-import {getThePictureExtension} from './getThePictureExtension.js';
 export function drawAnOverview(pictureForTheOverview){
   return new Promise((resolve)=>{
     // For now i just want to handle this 3 extensions
     const allowedExtensions = ['jpg','jpeg','png'];
-    const pictureExtension = getThePictureExtension(pictureForTheOverview);
+    let pictureExtension = pictureForTheOverview[0].name.split(".");
+        pictureExtension = pictureExtension.pop().trim().toLowerCase();
     if(allowedExtensions.includes(pictureExtension) === true){
       const thumbnail = new Image();
       const thumbnailUrl = URL.createObjectURL(pictureForTheOverview[0]);
             thumbnail.src = thumbnailUrl;
             thumbnail.onload = ()=>{
               if(thumbnail.complete === true){
-                resolve(thumbnail);
+                resolve([thumbnail,pictureExtension]);
                 setTimeout(()=>{URL.revokeObjectURL(thumbnailUrl);},2000);
               }
             },{passive:true};

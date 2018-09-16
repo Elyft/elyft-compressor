@@ -3,15 +3,15 @@ import {drawAnOverview} from '../helpers/drawAnOverview.js';
 import {elyftCompression} from '../helpers/elyftCompression.js';
 import {snackbar} from '../widgets/snackbar.js';
 import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
-import {getThePictureExtension} from '../helpers/getThePictureExtension.js';
 export function secondViewSlide(){
-	let imageToCompress;
+	// When fill the pictureFeatures will be an array
+	let pictureFeatures;
 	document.getElementById('second-view').onclick = (e)=>{
 		if(e.target !== e.currentTarget){
 			const targetId = e.target.id;
 			if(targetId === "start-compression"){
-				if(imageToCompress !== undefined){
-					const _elyftCompression = elyftCompression(imageToCompress);
+				if(pictureFeatures !== undefined){
+					const _elyftCompression = elyftCompression(pictureFeatures[0]);
 								_elyftCompression.then((responsePictureCompression)=>{
 
 								 }).catch((error)=>{
@@ -21,8 +21,8 @@ export function secondViewSlide(){
 					snackbar(document.getElementById('body'),'icons/info.svg',"Please choose a picture first",5000);
 				}
 			}else if(["png", "jpg-or-jpeg"].includes(targetId) === true){
-        if(imageToCompress !== undefined){
-					controllerForPngOrJpgImage(imageToCompress,getThePictureExtension(imageToCompress));
+        if(pictureFeatures !== undefined){
+					controllerForPngOrJpgImage(pictureFeatures[0],pictureFeatures[1]);
 				}
 			}
 		}else{
@@ -41,8 +41,7 @@ export function secondViewSlide(){
 					      requestAnimationFrame(()=>{
 							     area_img_selected.innerHTML = null;
 							     area_img_selected.style.backgroundImage = `url(${responseDrawAnOverview.src})`;
-									 imageToCompress = responseDrawAnOverview;
-									 console.log(imageToCompress);
+									 pictureFeatures = [responseDrawAnOverview[0],responseDrawAnOverview[1]];
 			          });
             }
 		  }).catch((error)=>{
