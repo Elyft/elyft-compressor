@@ -20,7 +20,7 @@ export function elyftCompression(pictureToCompress,newPictureExtension){
 			 blob = window.URL.createObjectURL(blob);
 			 var link = document.createElement('a');
 link.setAttribute('href', `${blob}`);
-link.setAttribute('download', 'moi le brave.jpg');
+link.setAttribute('download', `moi le brave.${newPictureExtension}`);
 link.setAttribute('target', '_blank');
 link.style.display = 'none';
 document.body.appendChild(link);
