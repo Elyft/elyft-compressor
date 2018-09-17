@@ -20,7 +20,7 @@ export function secondViewSlide(){
 				}else{
 					snackbar(document.getElementById('body'),'icons/info.svg',"Please choose a picture first",5000);
 				}
-			}else if(["png", "jpg-or-jpeg"].includes(targetId) === true){
+			}else if(["png", "jpg", "jpeg"].includes(targetId) === true){
         if(pictureFeatures !== undefined){
 					controllerForPngOrJpgImage(pictureFeatures[1],targetId);
 				}
