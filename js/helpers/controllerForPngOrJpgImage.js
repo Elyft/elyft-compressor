@@ -1,6 +1,7 @@
 import {snackbar} from '../widgets/snackbar.js';
 export function controllerForPngOrJpgImage(extensionName,domClicked){
   let message;
+  console.log(domClicked);
   if(domClicked === extensionName){
     message = `The image that you have selected is already a ${extensionName} image`;
   }else{
