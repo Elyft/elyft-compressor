@@ -36,7 +36,7 @@ export function secondViewSlide(){
 	 const pictureToCompress = this.files;
 	 const _drawAnOverView = drawAnOverview(pictureToCompress);
 	       _drawAnOverView.then((responseDrawAnOverview)=>{
-					 console.log(responseDrawAnOverview);
+					 // console.log(responseDrawAnOverview);
              if(responseDrawAnOverview === "Bad extension use jpg,jpeg or png"){
                 snackbar(document.getElementById('body'),'icons/info.svg',responseDrawAnOverview,5000);
              }else{
