@@ -6,12 +6,13 @@ import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.
 export function secondViewSlide(){
 	// When fill the pictureFeatures will be an array
 	let pictureFeatures;
+	let pictureExtensionSelected;
 	document.getElementById('second-view').onclick = (e)=>{
 		if(e.target !== e.currentTarget){
 			const targetId = e.target.id;
 			if(targetId === "start-compression"){
 				if(pictureFeatures !== undefined){
-					const _elyftCompression = elyftCompression(pictureFeatures[0]);
+					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
 
 								 }).catch((error)=>{
@@ -23,6 +24,7 @@ export function secondViewSlide(){
 			}else if(["png", "jpg", "jpeg"].includes(targetId) === true){
         if(pictureFeatures !== undefined){
 					controllerForPngOrJpgImage(pictureFeatures[1],targetId);
+					pictureExtensionSelected = targetId;
 				}
 			}
 		}else{

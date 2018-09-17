@@ -1,5 +1,5 @@
 import {ElyftCompressor} from '../vendors/elyft-hermite-compressor-core.js';
-export function elyftCompression(pictureToCompress){
+export function elyftCompression(pictureToCompress,newPictureExtension){
 	return new Promise((resolve)=>{
 	const ElyftCompress = new ElyftCompressor();
   const canvas = document.createElement("canvas");
@@ -15,7 +15,7 @@ export function elyftCompression(pictureToCompress){
   const w =  Math.round(img_w * 100 / 100);
   const h =  Math.round(img_h * 100 / 100);
   function finish(){
-     canvas.toBlob(function(blob){
+     canvas.toBlob((blob)=>{
        console.log(blob);
 			 blob = window.URL.createObjectURL(blob);
 			 var link = document.createElement('a');
@@ -26,7 +26,7 @@ link.style.display = 'none';
 document.body.appendChild(link);
 link.click();
 document.body.removeChild(link);
-     }, "image/jpeg", 0.8);
+},`image/${newPictureExtension}`, 0.8);
    }
   ElyftCompress.resample(canvas, w, h, true, finish);
 	});
