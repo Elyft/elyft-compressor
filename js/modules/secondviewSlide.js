@@ -22,7 +22,7 @@ export function secondViewSlide(){
 				}
 			}else if(["png", "jpg-or-jpeg"].includes(targetId) === true){
         if(pictureFeatures !== undefined){
-					controllerForPngOrJpgImage(pictureFeatures[0],pictureFeatures[1]);
+					controllerForPngOrJpgImage(pictureFeatures[1]);
 				}
 			}
 		}else{
