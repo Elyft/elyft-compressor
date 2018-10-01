@@ -142,3 +142,7 @@ body, html{
 #wrapper-compression-success h1{
   font-size:1.8rem;
 }
+#download-image{
+  text-decoration:none;
+  margin-top:50px;
+}
