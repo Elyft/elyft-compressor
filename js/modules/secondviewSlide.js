@@ -18,7 +18,7 @@ export function secondViewSlide(){
 								_elyftCompression.then((responsePictureCompression)=>{
                    const animation = animateSlide(document.getElementById('flex-box-contain'),'-100%');
 												 animation.then((responseAnimation)=>{
-													 console.log(responseDrawAnOverview)
+													 console.log(responseAnimation)
 						 							if(responseAnimation === "Animation terminée"){
 						 								thirdViewSlide();
 						 							}
