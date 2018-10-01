@@ -1,5 +1,10 @@
 export function animateSlide(domToAnim,percentToTranslate){
-  return requestAnimationFrame(()=>{
-    domToAnim.style.transform = `translate3d(${percentToTranslate},0,0)`;
-  },domToAnim);
+  return new Promise((resolve)=>{
+    requestAnimationFrame(()=>{
+      domToAnim.style.transform = `translate3d(${percentToTranslate},0,0)`;
+      domToAnim.addEventListener("transitionend",()=>{
+        resolve("Animation terminée");
+      });
+    },domToAnim);
+  })
 }

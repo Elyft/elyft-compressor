@@ -3,6 +3,7 @@ import {drawAnOverview} from '../helpers/drawAnOverview.js';
 import {elyftCompression} from '../helpers/elyftCompression.js';
 import {snackbar} from '../widgets/snackbar.js';
 import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
+import {thirdViewslide} from './modules/thirdviewSlide.js';
 export function secondViewSlide(){
 	// When filled the pictureFeatures will be an array
 	let pictureFeatures;
@@ -12,9 +13,17 @@ export function secondViewSlide(){
 			const targetId = e.target.id;
 			if(targetId === "start-compression"){
 				if(pictureFeatures !== undefined){
+					snackbar(document.getElementById('body'),'icons/info.svg',"D&eacute;but de la compr&eacute;ssion",5000);
 					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
-                   console.log(responsePictureCompression);
+                   const animateSlide = (document.getElementById('flex-box-contain'),'-100%');
+									 animateSlide.then((responseAnimation)=>{
+			 							if(responseAnimation === "Animation terminée"){
+			 								thirdViewslide();
+			 							}
+			 						 }).catch((error)=>{
+			 							console.log(error);
+			 						 });
 								 }).catch((error)=>{
 									 console.log(error);
 								});

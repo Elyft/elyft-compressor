@@ -21,7 +21,7 @@ export function loadImages(...imagesPaths){
 
     function handleAllCheckIfImageLoadedOrNot(...imagesPaths){
       return Promise.all(imagesPaths.map(checkIfImageLoadedOrNot)).then((values)=>{
-        resolve("All Images are loaded")
+        resolve("All Images are loaded");
       });
     }
     handleAllCheckIfImageLoadedOrNot(...imagesPaths);
