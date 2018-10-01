@@ -13,17 +13,17 @@ export function secondViewSlide(){
 			const targetId = e.target.id;
 			if(targetId === "start-compression"){
 				if(pictureFeatures !== undefined){
-					snackbar(document.getElementById('body'),'icons/info.svg',"D&eacute;but de la compr&eacute;ssion",5000);
+					snackbar(document.getElementById('body'),'icons/info.svg',"D&eacute;but de la compr&eacute;ssion",2500);
 					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
-                   const animateSlide = (document.getElementById('flex-box-contain'),'-100%');
-									 animateSlide.then((responseAnimation)=>{
-			 							if(responseAnimation === "Animation terminée"){
-			 								thirdViewSlide();
-			 							}
-			 						 }).catch((error)=>{
-			 							console.log(error);
-			 						 });
+                   const animation = (document.getElementById('flex-box-contain'),'-100%');
+												 animation.then((responseAnimation)=>{
+						 							if(responseAnimation === "Animation terminée"){
+						 								thirdViewSlide();
+						 							}
+						 						 }).catch((error)=>{
+						 							console.log(error);
+						 						 });
 								 }).catch((error)=>{
 									 console.log(error);
 								});
