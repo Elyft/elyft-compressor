@@ -133,13 +133,10 @@ body, html{
 }
 
 /* Third View */
-#third-view{
-  background:var(--theme-color);
-}
 #wrapper-compression-success{
   background:#212121;
   padding:15px;
-  color:var(--theme-color);
+  color:#212121;
   text-align:center;
   box-sizing:border-box;
 }
@@ -148,11 +145,4 @@ body, html{
 }
 #wrapper-compression-success p:first-child{
   font-size:1.4rem;
-}
-#compression-success-icon{
-  margin-top:50px;
-  width:64px;
-  height:64px;
-  margin:0 auto;
-  display:block;
 }
