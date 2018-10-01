@@ -16,6 +16,7 @@ export function secondViewSlide(){
 					snackbar(document.getElementById('body'),'icons/info.svg',"D&eacute;but de la compr&eacute;ssion",2500);
 					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
+									 console.log(responsePictureCompression)
                    const animation = animateSlide(document.getElementById('flex-box-contain'),'-100%');
 												 animation.then((responseAnimation)=>{
 													 console.log(responseAnimation)
