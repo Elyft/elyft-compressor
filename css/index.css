@@ -136,7 +136,8 @@ body, html{
 #wrapper-compression-success{
   height:200px;
   background:var(--theme-color);
-  border-radius:30px;
+  padding:15px;
+  color:#ffffff;
 }
 #compression-success-icon{
   margin-top:50px;
