@@ -4,7 +4,7 @@ import {elyftCompression} from '../helpers/elyftCompression.js';
 import {snackbar} from '../widgets/snackbar.js';
 import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
 export function secondViewSlide(){
-	// When fill the pictureFeatures will be an array
+	// When filled the pictureFeatures will be an array
 	let pictureFeatures;
 	let pictureExtensionSelected;
 	document.getElementById('second-view').onclick = (e)=>{
@@ -14,7 +14,7 @@ export function secondViewSlide(){
 				if(pictureFeatures !== undefined){
 					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
-
+                   console.log(responsePictureCompression);
 								 }).catch((error)=>{
 									 console.log(error);
 								});
