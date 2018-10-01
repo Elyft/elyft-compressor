@@ -133,11 +133,22 @@ body, html{
 }
 
 /* Third View */
+#third-view{
+  background:var(--theme-color);
+}
 #wrapper-compression-success{
   height:200px;
-  background:var(--theme-color);
+  background:#ffffff;
   padding:15px;
-  color:#ffffff;
+  color:var(--theme-color);
+  text-align:center;
+  box-sizing:border-box;
+}
+#wrapper-compression-success h1{
+  font-size:1.8rem;
+}
+#wrapper-compression-success p:first-child{
+  font-size:1.4rem;
 }
 #compression-success-icon{
   margin-top:50px;
