@@ -159,3 +159,11 @@ body, html{
   margin:0 auto;
   text-align:center;
 }
+#wrapper-social-network a{
+  text-decoration:none;
+}
+#wrapper-social-network a > p{
+  display:inline-block;
+  color:#212121;
+  font-size:0.70rem;
+}
