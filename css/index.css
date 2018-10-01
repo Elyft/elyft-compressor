@@ -137,8 +137,7 @@ body, html{
   background:var(--theme-color);
 }
 #wrapper-compression-success{
-  height:200px;
-  background:#ffffff;
+  background:#212121;
   padding:15px;
   color:var(--theme-color);
   text-align:center;
