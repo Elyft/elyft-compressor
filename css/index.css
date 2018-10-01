@@ -154,3 +154,8 @@ body, html{
   box-sizing:border-box;
   padding-top:20px;
 }
+#wrapper-social-network{
+  width:260px;
+  margin:0 auto;
+  text-align:center;
+}
