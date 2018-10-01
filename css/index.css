@@ -133,6 +133,10 @@ body, html{
 }
 
 /* Third View */
+#wrapper-compression-success{
+  height:200px;
+  background:var(--theme-color);
+}
 #compression-success-icon{
   margin-top:50px;
   width:64px;
