@@ -144,5 +144,9 @@ body, html{
 }
 #download-image{
   text-decoration:none;
-  margin-top:150px;
+  margin-top:75px;
+}
+#contact-me-text{
+  font-size:.85rem;
+  text-align:center;
 }
