@@ -149,4 +149,8 @@ body, html{
 #contact-me-text{
   font-size:.80rem;
   text-align:center;
+  padding-left:50px;
+  padding-right:50px;
+  box-sizing:border-box;
+  padding-top:20px;
 }
