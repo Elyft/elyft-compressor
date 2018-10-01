@@ -3,7 +3,7 @@ import {drawAnOverview} from '../helpers/drawAnOverview.js';
 import {elyftCompression} from '../helpers/elyftCompression.js';
 import {snackbar} from '../widgets/snackbar.js';
 import {controllerForPngOrJpgImage} from '../helpers/controllerForPngOrJpgImage.js';
-import {thirdViewslide} from './thirdviewSlide.js';
+import {thirdViewSlide} from './thirdviewSlide.js';
 export function secondViewSlide(){
 	// When filled the pictureFeatures will be an array
 	let pictureFeatures;
