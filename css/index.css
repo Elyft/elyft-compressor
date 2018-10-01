@@ -131,3 +131,12 @@ body, html{
   margin:0 auto;
   margin-top:30px;
 }
+
+/* Third View */
+#compression-success-icon{
+  margin-top:50px;
+  width:64px;
+  height:64px;
+  margin:0 auto;
+  display:block;
+}

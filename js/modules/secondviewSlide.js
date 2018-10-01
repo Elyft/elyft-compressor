@@ -13,7 +13,7 @@ export function secondViewSlide(){
 			const targetId = e.target.id;
 			if(targetId === "start-compression"){
 				if(pictureFeatures !== undefined){
-					snackbar(document.getElementById('body'),'icons/info.svg',"D&eacute;but de la compr&eacute;ssion",2500);
+					snackbar(document.getElementById('body'),'icons/info.svg',"Compr&eacute;ssion en cours...",1500);
 					const _elyftCompression = elyftCompression(pictureFeatures[0],pictureExtensionSelected);
 								_elyftCompression.then((responsePictureCompression)=>{
                    const animation = animateSlide(document.getElementById('flex-box-contain'),'-200%');
