@@ -4,6 +4,5 @@ export function downloadManager(arrayFileAndExtension){
    let randomFileName = Math.random().toString(36).substring(1);
        randomFileName = `${btoa(randomFileName)}.${arrayFileAndExtension[1]}`;
    const fileUrl = window.URL.createObjectURL(arrayFileAndExtension[0]);
-   window.location.assign(fileUrl);
  });
 }
