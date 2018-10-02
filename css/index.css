@@ -162,14 +162,17 @@ body, html{
 }
 #wrapper-social-network a{
   text-decoration:none;
-  position:relative;
+  /* position:relative; */
   margin-left:10px;
+  display:inline-block;
+  width:50px;
 }
 #wrapper-social-network a > p{
   color:#212121;
   font-size:0.70rem;
   display:inline-block;
-  position:absolute;
-  top:15px;
+  /* position:absolute; */
+  /* top:15px; */
   /* left:15px; */
+  /* margin-left:15px; */
 }
