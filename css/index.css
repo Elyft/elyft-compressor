@@ -165,7 +165,7 @@ body, html{
   margin-left:15px;
   display:inline-block;
   width:50px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition:filter ease 0.5s, color ease 0.5s;
 }
 #footer-third-view a:first-child{
