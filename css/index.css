@@ -183,6 +183,7 @@ body, html{
 #footer-third-view #back-to-start{
   display:block;
   cursor:pointer;
+  margin-top:15px;
 }
 #footer-third-view #back-to-start:hover{
   text-decoration:underline;
