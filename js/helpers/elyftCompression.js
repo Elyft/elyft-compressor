@@ -6,7 +6,7 @@ export function elyftCompression(pictureToCompress,newPictureExtension="jpeg"){
   const ctx = canvas.getContext("2d");
   const img_w = pictureToCompress.width;
   const img_h = pictureToCompress.height;
-  // On prepare notre canvas a accueillir l'image puis on dessine l'image
+  // We prepare our canvas to receive the image and then draw the image
   canvas.width = img_w;
   canvas.height = img_h;
   ctx.clearRect(0,0,img_w,img_h);

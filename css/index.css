@@ -195,5 +195,5 @@ body, html{
   width:300px;
   background:var(--secondary-theme-color);
   border-radius:0px 5px 5px 0px;
-  margin:auto;
+  margin:-100px;
 }
