@@ -168,9 +168,9 @@ body, html{
   filter: grayscale(100%);
   transition:filter ease 0.5s, color ease 0.5s;
 }
-#wrapper-social-network a:hover, #wrapper-social-network a > p:hover{
+#wrapper-social-network a:hover{
   filter:grayscale(0%);
-  color:var(--theme-color);
+  color:var(--theme-color)!important;
 }
 #wrapper-social-network a > p{
   color:#212121;
