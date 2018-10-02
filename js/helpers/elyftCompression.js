@@ -17,14 +17,6 @@ export function elyftCompression(pictureToCompress,newPictureExtension="jpg"){
   function finish(){
      canvas.toBlob((blob)=>{
      resolve([blob,newPictureExtension]);
-// 			 var link = document.createElement('a');
-// link.setAttribute('href', `${blob}`);
-// link.setAttribute('download', `moi le brave.${newPictureExtension}`);
-// link.setAttribute('target', '_blank');
-// link.style.display = 'none';
-// document.body.appendChild(link);
-// link.click();
-// document.body.removeChild(link);
      },`image/${newPictureExtension}`, 0.8);
  }
  ElyftCompress.resample(canvas, w, h, true, finish);
