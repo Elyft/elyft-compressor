@@ -169,7 +169,7 @@ body, html{
   transition:filter ease 0.5s, color ease 0.5s;
 }
 #wrapper-social-network a:first-child{
-  display:none;
+  margin-left:15px !important;
 }
 #wrapper-social-network a:hover, #wrapper-social-network a:hover > p{
   filter:grayscale(0%);
