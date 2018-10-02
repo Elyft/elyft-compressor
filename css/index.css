@@ -162,8 +162,7 @@ body, html{
 }
 #wrapper-social-network a{
   text-decoration:none;
-  /* position:relative; */
-  margin-left:10px;
+  margin-left:15px;
   display:inline-block;
   width:50px;
 }
@@ -171,8 +170,4 @@ body, html{
   color:#212121;
   font-size:0.70rem;
   display:inline-block;
-  /* position:absolute; */
-  /* top:15px; */
-  /* left:15px; */
-  /* margin-left:15px; */
 }
