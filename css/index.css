@@ -158,12 +158,12 @@ body, html{
   width:260px;
   margin:0 auto;
   text-align:center;
+  margin-top:30px;
 }
 #wrapper-social-network a{
   text-decoration:none;
 }
 #wrapper-social-network a > p{
-  display:inline-block;
   color:#212121;
   font-size:0.70rem;
 }
