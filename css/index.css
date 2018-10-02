@@ -168,6 +168,9 @@ body, html{
   filter: grayscale(100%);
   transition:filter ease 0.5s;
 }
+#wrapper-social-network a:hover{
+  filter:grayscale(0%);
+}
 #wrapper-social-network a > p{
   color:#212121;
   font-size:0.70rem;
