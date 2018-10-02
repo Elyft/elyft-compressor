@@ -185,3 +185,14 @@ body, html{
 #footer-third-view #back-to-start:hover{
   text-decoration:underline;
 }
+/* RoadMap */
+#roadmap{
+  position:absolute;
+  top:50%;
+  left:0;
+  padding:15px;
+  height:300px;
+  width:400px;
+  background:var(--secondary-theme-color);
+  border-radius:0px 5px 5px 0px;
+}
