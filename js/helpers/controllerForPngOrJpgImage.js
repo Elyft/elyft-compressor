@@ -7,5 +7,5 @@ export function controllerForPngOrJpgImage(extensionName,domClicked){
   // }else{
     message = `Your image will be automatically convert to ${domClicked} image.`;
   // }
-  snackbar(document.getElementById('body'),'icons/info.svg',message,3000);
+  snackbar(document.getElementById('body'),'icons/info.svg',message,2000);
 }
