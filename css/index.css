@@ -180,8 +180,10 @@ body, html{
   font-size:0.70rem;
   display:inline-block;
 }
-#footer-third-view #back-to-start:hover{
-  text-decoration:underline;
+#footer-third-view #back-to-start{
   display:block;
   cursor:pointer;
+}
+#footer-third-view #back-to-start:hover{
+  text-decoration:underline;
 }
