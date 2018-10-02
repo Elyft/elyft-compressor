@@ -188,7 +188,7 @@ body, html{
 /* RoadMap */
 #roadmap{
   position:absolute;
-  top:0;
+  top:50%;
   left:0;
   padding:15px;
   height:200px;
