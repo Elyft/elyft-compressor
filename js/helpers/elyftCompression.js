@@ -1,5 +1,5 @@
 import {ElyftCompressor} from '../vendors/elyft-hermite-compressor-core.js';
-export function elyftCompression(pictureToCompress,newPictureExtension){
+export function elyftCompression(pictureToCompress,newPictureExtension="jpeg"){
 	return new Promise((resolve)=>{
 	const ElyftCompress = new ElyftCompressor();
   const canvas = document.createElement("canvas");
