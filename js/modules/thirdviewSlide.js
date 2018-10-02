@@ -6,9 +6,9 @@ export function thirdViewSlide(arrayFileAndExtension){
    if(e.target !== e.currentTarget){
      const targetId = e.target.id;
      if(targetId === "download-image"){
-       const downloadManager = downloadManager(arrayFileAndExtension);
-             downloadManager.then((responseDownloadManager)=>{
-
+       const downloadPicture = downloadManager(arrayFileAndExtension);
+             downloadPicture.then((responseDownloadManager)=>{
+               console.log(responseDownloadManager);
              }).catch((error)=>{
                console.log(error);
              });
