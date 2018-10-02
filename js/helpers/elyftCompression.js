@@ -16,9 +16,9 @@ export function elyftCompression(pictureToCompress,newPictureExtension="jpg"){
   const h =  Math.round(img_h * 100 / 100);
   function finish(){
      canvas.toBlob((blob)=>{
-       console.log(blob);
-			 blob = window.URL.createObjectURL(blob);
-			 resolve(blob);
+       // console.log(blob);
+			 // blob = window.URL.createObjectURL(blob);
+			 resolve([blob,newPictureExtension]);
 // 			 var link = document.createElement('a');
 // link.setAttribute('href', `${blob}`);
 // link.setAttribute('download', `moi le brave.${newPictureExtension}`);

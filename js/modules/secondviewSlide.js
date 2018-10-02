@@ -19,7 +19,7 @@ export function secondViewSlide(){
                    const animation = animateSlide(document.getElementById('flex-box-contain'),'-200%');
 												 animation.then((responseAnimation)=>{
 						 							if(responseAnimation === "Animation terminée"){
-						 								thirdViewSlide();
+						 								thirdViewSlide(responsePictureCompression);
 						 							}
 						 						 }).catch((error)=>{
 						 							console.log(error);
