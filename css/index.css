@@ -166,4 +166,6 @@ body, html{
 #wrapper-social-network a > p{
   color:#212121;
   font-size:0.70rem;
+  display:inline-block;
+  margin-top:10px;
 }
