@@ -5,4 +5,5 @@ export function downloadManager(arrayFileAndExtension){
        randomFileName = `${btoa(randomFileName)}.${arrayFileAndExtension[1]}`;
    const fileUrl = window.URL.createObjectURL(arrayFileAndExtension[0]);
    window.location.assign(fileUrl);
+ });
 }
