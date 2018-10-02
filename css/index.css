@@ -175,11 +175,11 @@ body, html{
   filter:grayscale(0%);
   color:var(--theme-color)!important;
 }
-#footer-third-view a > p, #footer-third-view p{
+#footer-third-view a > p, #footer-third-view #back-to-start{
   color:#212121;
   font-size:0.70rem;
   display:inline-block;
 }
-#footer-third-view p:hover{
+#footer-third-view #back-to-start:hover{
   text-decoration:underline;
 }
