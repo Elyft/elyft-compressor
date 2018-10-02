@@ -5,7 +5,7 @@ export function thirdViewSlide(arrayFileAndExtension){
  document.getElementById("third-view").onclick = (e)=>{
    e.preventDefault();
    if(e.target !== e.currentTarget){
-     console.log(typeof(e.target));
+     console.log(typeof(e.target.href));
      const targetId = e.target.id;
      if(targetId === "download-image"){
        const downloadPicture = downloadManager(arrayFileAndExtension);
