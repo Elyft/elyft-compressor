@@ -13,7 +13,7 @@ export function thirdViewSlide(arrayFileAndExtension){
                console.log(error);
              });
      }else if(targetId === "back-to-start"){
-       animateSlide(document.getElementById('flex-box-contain'),'0%')
+       animateSlide(document.getElementById('flex-box-contain'),'100%')
      }else{
        return false;
      }
