@@ -11,6 +11,7 @@ export function drawAnOverview(pictureForTheOverview){
             thumbnail.onload = ()=>{
               if(thumbnail.complete === true){
                 resolve([thumbnail,pictureExtension]);
+                // Free Up some memory
                 setTimeout(()=>{URL.revokeObjectURL(thumbnailUrl);},2000);
               }
             },{passive:true};

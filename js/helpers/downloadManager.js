@@ -6,5 +6,7 @@ export function downloadManager(arrayFileAndExtension,downloadLink){
    const fileUrl = window.URL.createObjectURL(arrayFileAndExtension[0]);
    downloadLink.href=`${fileUrl}`;
    downloadLink.download=`${randomFileName}`;
+   // Free Up some memory
+   setTimeout(()=>{URL.revokeObjectURL(fileUrl);},2000);
  });
 }

@@ -54,6 +54,7 @@ export function secondViewSlide(){
 							     area_img_selected.innerHTML = null;
 							     area_img_selected.style.backgroundImage = `url(${responseDrawAnOverview[0].src})`;
 									 pictureFeatures = [responseDrawAnOverview[0],responseDrawAnOverview[1]];
+									 pictureExtensionSelected = responseDrawAnOverview[1];
 			          });
             }
 		  }).catch((error)=>{
