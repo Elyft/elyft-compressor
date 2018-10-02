@@ -162,10 +162,13 @@ body, html{
 }
 #wrapper-social-network a{
   text-decoration:none;
+  position:relative;
 }
 #wrapper-social-network a > p{
   color:#212121;
   font-size:0.70rem;
   display:inline-block;
-  margin-top:15px;
+  position:absolute;
+  top:15px;
+  left:15px;
 }
