@@ -165,14 +165,11 @@ body, html{
   margin-left:15px;
   display:inline-block;
   width:50px;
-  /* filter: grayscale(100%); */
-  transition:filter ease 0.5s, color ease 0.5s;
 }
 #footer-third-view a:first-child{
   margin-left:0px !important;
 }
-#footer-third-view a:hover, #footer-third-view a:hover > p{
-  filter:grayscale(0%);
+#footer-third-view a > p:hover{
   color:var(--theme-color)!important;
 }
 #footer-third-view a > p, #footer-third-view #back-to-start{
