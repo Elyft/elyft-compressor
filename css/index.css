@@ -183,4 +183,5 @@ body, html{
 #footer-third-view #back-to-start:hover{
   text-decoration:underline;
   display:block;
+  cursor:pointer;
 }
