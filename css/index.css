@@ -163,6 +163,7 @@ body, html{
 #wrapper-social-network a{
   text-decoration:none;
   position:relative;
+  margin-left:10px;
 }
 #wrapper-social-network a > p{
   color:#212121;
@@ -170,5 +171,5 @@ body, html{
   display:inline-block;
   position:absolute;
   top:15px;
-  left:15px;
+  /* left:15px; */
 }
