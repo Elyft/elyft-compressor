@@ -14,7 +14,7 @@ export function downloadManager(arrayFileAndExtension){
       resolve("download completed");
     }
    }
-   browser.downloads.download(options);
-   browser.downloads.onChanged.addListener(handleChanged);
+   window.downloads.download(options);
+  window.downloads.onChanged.addListener(handleChanged);
   });
 }
