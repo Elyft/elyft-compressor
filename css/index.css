@@ -166,16 +166,14 @@ body, html{
   display:inline-block;
   width:50px;
   filter: grayscale(100%);
-  transition:filter ease 0.7s, color ease 0.7s;
+  transition:filter ease 0.5s, color ease 0.5s;
 }
 #wrapper-social-network a:hover{
   filter:grayscale(0%);
+  color:var(--theme-color);
 }
 #wrapper-social-network a > p{
   color:#212121;
   font-size:0.70rem;
   display:inline-block;
-}
-#wrapper-social-network a > p:hover{
-  color:var(--theme-color);
 }
