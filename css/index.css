@@ -165,6 +165,8 @@ body, html{
   margin-left:15px;
   display:inline-block;
   width:50px;
+  filter: grayscale(100%);
+  transition:filter ease 0.5s;
 }
 #wrapper-social-network a > p{
   color:#212121;
