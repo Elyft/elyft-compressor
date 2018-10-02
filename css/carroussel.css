@@ -11,6 +11,7 @@
   background-position:center;
   background-size:cover;
   transition:opacity 3s;
+  will-change: opacity;
 }
 .bg1{
   background:url(../img/bg1.jpg);
