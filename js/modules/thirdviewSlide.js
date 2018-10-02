@@ -3,7 +3,9 @@ import {downloadManager} from '../helpers/downloadManager.js';
 import {animateSlide} from '../helpers/animateSlide.js';
 export function thirdViewSlide(arrayFileAndExtension){
  document.getElementById("third-view").onclick = (e)=>{
+   e.preventDefault();
    if(e.target !== e.currentTarget){
+     console.log(e.target);
      const targetId = e.target.id;
      if(targetId === "download-image"){
        const downloadPicture = downloadManager(arrayFileAndExtension);
