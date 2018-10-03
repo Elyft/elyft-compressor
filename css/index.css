@@ -208,9 +208,9 @@ body, html{
   background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
-  right:-69px; /* Magic Number i need to change this in the future*/
+  right:-70px; /* Magic Number i need to change this in the future*/
   top:50%;
-  margin-top:-21px;
+  margin-top:-20px;
   color:#ffffff;
   box-sizing:border-box;
   text-align:center;
