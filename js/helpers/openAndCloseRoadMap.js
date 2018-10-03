@@ -1,6 +1,6 @@
 export function openAndCloseRoadMap(){
   let isOpen = false;
-  document.getElementById("#button-to-open-roadmap").onclick = ()=>{
+  document.getElementById("button-to-open-roadmap").onclick = ()=>{
     const roadmap = document.getElementById("roadmap");
     requestAnimationFrame(()=>{
       if(isOpen === false){
