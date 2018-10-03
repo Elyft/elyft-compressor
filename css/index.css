@@ -201,9 +201,6 @@ body, html{
   -webkit-transition: transform .5s ease;
 	transition: transform .5s ease;
 }
-#roadmap:target{
-  transform:translate3d(0,0,0);
-}
 #button-to-open-roadmap{
   padding:7px;
   height:38px;
@@ -219,4 +216,5 @@ body, html{
   text-align:center;
   transform:rotate(90deg);
   border-radius:5px 5px 0px 0px;
+  cursor:pointer;
 }

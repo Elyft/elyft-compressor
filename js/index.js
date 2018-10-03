@@ -1,6 +1,7 @@
 import {carroussel} from './widgets/carroussel.js';
 import {loadImages} from './helpers/loadImages.js';
 import {firstViewSlide} from './modules/firstviewSlide.js';
+import {openAndCloseRoadMap} from './helpers/openAndCloseRoadMap.js';
 document.addEventListener("DOMContentLoaded", () =>{
   "use strict";
   loadImages(...['img/bg1.jpg','img/bg2.jpg','img/bg3.jpg'])
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () =>{
     console.log(error);
   })
   firstViewSlide();
+  openAndCloseRoadMap();
 },{passive:true,capture:false});
