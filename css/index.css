@@ -192,7 +192,6 @@ body, html{
   position:absolute;
   top:50%;
   left:0;
-  padding:15px;
   height:300px;
   width:300px;
   background:rgba(255,255,255,0.9);
@@ -202,6 +201,13 @@ body, html{
   transform:translate3d(-300px,0,0);
   -webkit-transition: transform .5s ease;
 	transition: transform .5s ease;
+}
+#padding ul{
+  padding:10px;
+}
+#padding ul li{
+  list-style:none;
+  font-size:0.85rem;
 }
 #button-to-open-roadmap{
   padding:7px;
