@@ -212,4 +212,5 @@ body, html{
   box-sizing:border-box;
   text-align:center;
   transform:rotate(90deg);
+  border-radius:0px 5px 5px 0px;
 }
