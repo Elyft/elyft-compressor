@@ -202,12 +202,12 @@ body, html{
   -webkit-transition: transform .5s ease;
 	transition: transform .5s ease;
 }
-#padding ul{
-  padding:10px;
+#roadmap ul{
   list-style:none;
 }
-#padding ul li{
-  font-size:0.80rem;
+#roadmap ul li{
+  font-size:0.8rem;
+  padding:10px;
 }
 #button-to-open-roadmap{
   padding:7px;
