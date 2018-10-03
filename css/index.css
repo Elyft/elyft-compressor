@@ -234,3 +234,11 @@ body, html{
   border-radius:0px 0px 5px 5px;
   cursor:pointer;
 }
+
+/* Some utility class for roadmap component */
+.to-do{
+  color:gray;
+}
+.over{
+  color:#212121;
+}
