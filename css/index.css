@@ -191,9 +191,13 @@ body, html{
   top:50%;
   left:0;
   padding:15px;
-  height:200px;
+  height:250px;
   width:300px;
-  background:var(--secondary-theme-color);
+  background:#ffffff;
   border-radius:0px 5px 5px 0px;
   margin:-100px;
+  box-sizing:border-box;
+}
+#button-to-open-roadmap{
+
 }
