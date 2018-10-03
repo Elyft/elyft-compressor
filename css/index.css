@@ -198,12 +198,17 @@ body, html{
   margin-top:-150px;
   box-sizing:border-box;
   transform:translate3d(-350px,0,0);
+  -webkit-transition: transform .5s ease-in;
+	transition: transform .5s ease-in;
+}
+#roadmap:target{
+  transform:translate3d(0,0,0);
 }
 #button-to-open-roadmap{
   padding:7px;
   height:40px;
   width:100px;
-  background:rgba(255,255,255,0.9);
+  background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
   right:-70px;
