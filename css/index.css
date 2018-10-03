@@ -200,7 +200,7 @@ body, html{
 }
 #button-to-open-roadmap{
   padding:7px;
-  height:50px;
+  height:40px;
   width:100px;
   background:var(--secondary-theme-color);
   text-decoration:none;
