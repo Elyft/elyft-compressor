@@ -205,9 +205,9 @@ body, html{
   background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
-  right:-100px;
+  right:-40px;
   top:50%;
-  margin-top:-50px;
+  margin-top:-20px;
   color:#ffffff;
   box-sizing:border-box;
   text-align:center;
