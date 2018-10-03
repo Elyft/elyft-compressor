@@ -204,10 +204,10 @@ body, html{
 }
 #padding ul{
   padding:10px;
+  list-style:none;
 }
 #padding ul li{
-  list-style:none;
-  font-size:0.85rem;
+  font-size:0.80rem;
 }
 #button-to-open-roadmap{
   padding:7px;
