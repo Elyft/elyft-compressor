@@ -205,7 +205,7 @@ body, html{
   background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
-  right:-40px;
+  right:-80px;
   top:50%;
   margin-top:-20px;
   color:#ffffff;
