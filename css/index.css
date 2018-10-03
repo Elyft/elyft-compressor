@@ -224,7 +224,7 @@ body, html{
   width:32px;
   height:32px;
   border-radius:50%;
-  background:url("icons/check.png");
+  background:url("../icons/check.png");
   background-position:center;
 }
 #button-to-open-roadmap{
