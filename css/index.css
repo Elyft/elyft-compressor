@@ -203,14 +203,14 @@ body, html{
 }
 #button-to-open-roadmap{
   padding:7px;
-  height:36px;
+  height:40px;
   width:100px;
   background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
   right:-69px; /* Magic Number i need to change this in the future*/
   top:50%;
-  margin-top:-17px;
+  margin-top:-20px;
   color:#ffffff;
   box-sizing:border-box;
   text-align:center;
