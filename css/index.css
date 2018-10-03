@@ -217,6 +217,16 @@ body, html{
 #roadmap ul li:last-child{
   border-bottom:none;
 }
+#roadmap ul li > span{
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:5px;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:url("icons/check.png");
+  background-position:center;
+}
 #button-to-open-roadmap{
   padding:7px;
   height:40px;
@@ -241,4 +251,7 @@ body, html{
 }
 .over{
   color:#212121;
+}
+.grayscale{
+  filter:grayscale(100%);
 }
