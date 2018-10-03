@@ -212,7 +212,7 @@ body, html{
   font-size:0.8rem;
   padding:10px;
   box-sizing:border-box;
-  border-bottom:1px solid #bdbdbd;
+  border-bottom:1px solid #e0e0e0 ;
 }
 #roadmap ul li:last-child{
   border-bottom:none;
