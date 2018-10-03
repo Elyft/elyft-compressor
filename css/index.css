@@ -214,7 +214,7 @@ body, html{
   color:#ffffff;
   box-sizing:border-box;
   text-align:center;
-  transform:rotate(90deg);
+  transform:rotate(270deg);
   border-radius:5px 5px 0px 0px;
   cursor:pointer;
 }
