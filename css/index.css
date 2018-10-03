@@ -221,8 +221,8 @@ body, html{
   display:inline-block;
   vertical-align:middle;
   margin-right:5px;
-  width:20px;
-  height:20px;
+  width:16px;
+  height:16px;
   border-radius:50%;
   background:url("../icons/check.png");
   background-position:center;
