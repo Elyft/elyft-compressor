@@ -204,10 +204,14 @@ body, html{
 }
 #roadmap ul{
   list-style:none;
+  padding:0 !important;
+  margin:0 !important;
+  box-sizing:border-box;
 }
 #roadmap ul li{
   font-size:0.8rem;
   padding:10px;
+  box-sizing:border-box;
 }
 #button-to-open-roadmap{
   padding:7px;
