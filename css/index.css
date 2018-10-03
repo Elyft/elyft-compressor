@@ -210,4 +210,6 @@ body, html{
   margin-top:-50px;
   color:#ffffff;
   box-sizing:border-box;
+  text-align:center;
+  transform:rotate(90deg);
 }
