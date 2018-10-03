@@ -208,7 +208,7 @@ body, html{
   background:var(--secondary-theme-color);
   text-decoration:none;
   position:absolute;
-  right:-70px;
+  right:-69px; /* Magic Number i need to change this in the future*/
   top:50%;
   margin-top:-19px;
   color:#ffffff;
