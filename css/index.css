@@ -212,6 +212,7 @@ body, html{
   font-size:0.8rem;
   padding:10px;
   box-sizing:border-box;
+  border-bottom:1px solid #eeeeee;
 }
 #button-to-open-roadmap{
   padding:7px;
