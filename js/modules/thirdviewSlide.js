@@ -14,8 +14,6 @@ export function thirdViewSlide(arrayFileAndExtension){
              });
      }else if(targetId === "back-to-start"){
        animateSlide(document.getElementById('flex-box-contain'),'-100%')
-     }else{
-       return false;
      }
    }
  };
