@@ -193,7 +193,7 @@ body, html{
   padding:15px;
   height:300px;
   width:350px;
-  background:#ffffff;
+  background:rgba(255,255,255,0.9);
   border-radius:0px 5px 5px 0px;
   margin-top:-150px;
   box-sizing:border-box;
