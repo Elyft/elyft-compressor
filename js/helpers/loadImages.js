@@ -14,6 +14,7 @@ export function loadImages(...imagesPaths){
            }
          };
          img.onerror = () => {
+           // For Debugging purposes
            resolve({imagePath, status: 'error'});
          }
        });
@@ -25,5 +26,5 @@ export function loadImages(...imagesPaths){
       });
     }
     handleAllCheckIfImageLoadedOrNot(...imagesPaths);
-  })
+  });
 }
