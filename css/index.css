@@ -187,7 +187,6 @@ body, html{
 }
 /* RoadMap */
 #roadmap{
-  position:absolute;
   top:50%;
   left:0;
   padding:15px;
@@ -197,7 +196,15 @@ body, html{
   border-radius:0px 5px 5px 0px;
   margin-top:-150px;
   box-sizing:border-box;
+  position:relative;
 }
 #button-to-open-roadmap{
-
+  padding:7px;
+  height:100px;
+  background:var(--secondary-theme-color);
+  text-decoration:none;
+  position:absolute;
+  right:-10px;
+  top:50%;
+  margin-top:-50px;
 }
