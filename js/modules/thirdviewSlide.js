@@ -6,12 +6,7 @@ export function thirdViewSlide(arrayFileAndExtension){
    if(e.target !== e.currentTarget){
      const targetId = e.target.id;
      if(targetId === "download-image"){
-       const downloadPicture = downloadManager(arrayFileAndExtension,e.target);
-             downloadPicture.then((responseDownloadManager)=>{
-               console.log(responseDownloadManager);
-             }).catch((error)=>{
-               console.log(error);
-             });
+       downloadManager(arrayFileAndExtension,e.target);
      }else if(targetId === "back-to-start"){
        animateSlide(document.getElementById('flex-box-contain'),'-100%')
      }
