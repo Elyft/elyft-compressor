@@ -197,7 +197,7 @@ body, html{
   border-radius:0px 5px 5px 0px;
   margin-top:-150px;
   box-sizing:border-box;
-  transform:translate3d(0,0,0);
+  transform:translate3d(-350px,0,0);
 }
 #button-to-open-roadmap{
   padding:7px;
@@ -214,4 +214,5 @@ body, html{
   text-align:center;
   transform:rotate(90deg);
   border-radius:5px 5px 0px 0px;
+  color:var(--secondary-theme-color);
 }
