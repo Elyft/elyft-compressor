@@ -1,4 +1,4 @@
-// Elyft Compressor, compress resize and resample image using Hermite filter
+// Elyft Compressor, compress image with Hermite algorithm
 // thank you to Vilius for the help that i took inside his source code
 // Author: Nguetseng Stephane
 export function ElyftCompressor(){var v=[];var p=navigator.hardwareConcurrency||4;this.init=void 0;this.getCores=function(){return p};this.resample_auto=function(a,d,b,w,l){var f=this.getCores();window.Worker&&1<f?this.resample(a,d,b,w,l):(this.resample_single(a,d,b,!0),void 0!=l&&l())};this.resize_image=function(a,d,b,w,l){var f=document.getElementById(a),g=document.createElement("canvas");g.width=f.width;g.height=f.height;g.getContext("2d").drawImage(f,0,0);void 0==d&&void 0==b&&void 0!=w&&(d=f.width/
