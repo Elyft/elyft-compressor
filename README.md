@@ -10,8 +10,7 @@ Note that, change the image extension maybe in certains cases increase the resul
 
 ## How to install
 1. Go to the folder js/vendors and copy the file <strong> elyft-hermite-compressor-core.js </strong> inside your own vendors project folder.
-2. Go to the folder js/helpers and copy the file <strong> elyftCompression.js </strong> inside your own vendors project folder.
-NB: Note that inside your elyftCompression.js file you have to change the first line to ```import {ElyftCompressor} from './elyft-hermite-compressor-core.js' ```;
+2. Go to the folder js/helpers and copy the file <strong> elyftCompression.js </strong> inside your own vendors project folder. Note that inside your elyftCompression.js file you have to change the first line to ```import {ElyftCompressor} from './elyft-hermite-compressor-core.js' ```;
 
 ## How it's works
 In the head of your javascript file where you want to use elyft compressor you have to import the library like that
