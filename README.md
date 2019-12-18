@@ -18,7 +18,7 @@ In the head of your javascript file where you want to use elyft compressor you h
 Somewhere inside your code you have to write this:
 ```javascript
  elyftCompression(picture[0],pictureExtension).then((responseCompression)=>{
-    // picture[0] is the photo that the user uploaded on your website via an input type file
+    // picture[0] is the picture that the user uploaded on your website via an input type file
     // pictureExtension is the desire image output extension.By default it's jpeg(it will be a good thing if you let it like that)
        console.log(responseCompression);
     // responseCompression is an array which contain the compressed image in blob form(you can send it to your server like that)
