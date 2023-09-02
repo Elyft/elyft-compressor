@@ -2,7 +2,6 @@
 import {downloadManager} from '../helpers/downloadManager.js';
 import {animateSlide} from '../helpers/animateSlide.js';
 export function thirdViewSlide(arrayFileAndExtension){
- console.log(arrayFileAndExtension);
  document.getElementById("third-view").onclick = (e)=>{
    if(e.target !== e.currentTarget){
      const targetId = e.target.id;
