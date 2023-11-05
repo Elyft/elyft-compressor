@@ -30,7 +30,7 @@ Somewhere inside your code you have to write this:
     // And after that free up memory
     URL.revokeObjectURL(imageUrl);
     
- })catch((error)=>{
+ }).catch((error)=>{
    console.log(error);
  });
 ```
